@@ -1,0 +1,107 @@
+button {
+    background: #512da9;
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: .8px;
+    font-size: 16px;
+    border: none;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+}
+
+.container img {
+    width: calc((100vw / 2) - 100px);
+}
+
+.container > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container .hero {
+    background: #d5dbf3;
+}
+
+.container .register {
+    padding: 52px;
+}
+
+.container .register header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.container .register header h1 div.separator {
+    width: 100px;
+    height: 4px;
+    background: #512da9;
+    margin-top: 4px;
+}
+
+.container .register header button {
+    padding: 6px 12px;
+    border-radius: 4px;
+}
+
+.container .register form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+
+.container .register form input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 4px;
+    border: none;
+    box-shadow: 0 1px 2px 1px #d8d8d8;
+}
+
+
+.container .register form .input label {
+    display: block;
+    margin-bottom: 6px;
+}
+
+.container .register form .input.gender {
+    margin-top: 20px;
+}
+
+.container .register form .input.gender fieldset {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: none;
+}
+
+.container .register form .input.gender fieldset legend {
+    margin-bottom: 8px;
+}
+
+.container .register form .input.gender fieldset input {
+    width: auto;
+    margin-right: 4px;
+}
+
+.container .register form .input.gender fieldset label {
+    display: inline;
+}
+
+.container .register form .gender, button {
+    grid-column: 1 / -1;
+}
+
+.container .register form button {
+    margin-top: 16px;
+    padding: 16px;
+    border-radius: 8px;
+}
+

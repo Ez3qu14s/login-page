@@ -1,0 +1,148 @@
+body {
+    background:  #d5dbf3;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: "Montserrat", sans-serif;
+    color: #180e3e;
+}
+
+.container {
+    background: #fff;
+    
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    box-shadow: 0 2px 4px 2px #c6ceee;
+    width: 780px;
+}
+
+.container > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    padding: 56px 20px;
+    text-align: center;
+}
+
+.container .sign-in ul {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #5d605f;
+}
+
+.container .sign-in p {
+    font-size: 12px;
+    color: #b3b5b5;
+}
+
+.container .sign-in form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 80%;
+    display: flex;
+    align-items: center;
+}
+
+.container .sign-in form input {
+    background: #eeeeee;
+    padding: 12px 16px;
+    border: none;
+    margin-bottom: 8px;
+    width: 100%;
+    border-radius: 4px;
+    color: #c0c1bf;
+}
+
+.container .sign-in form input[type="password"] {
+    margin-bottom: 20px;
+}
+
+.container .sign-in form a {
+    display: block;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 12px;
+    color: #b3b5b5;
+}
+
+.container .sign-in button.button.btn-sign-in {
+    background-color: #512da9;
+    border-radius: 8px;
+    border: none;
+    display: block;
+    color: #fff;
+    padding: 12px 40px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.container .sign-up {
+    background: linear-gradient(-45deg, #564cb3, #512da7);
+    color: #fff;
+    border-radius: 56% 20px 20px 40%;
+    text-align: center;
+    gap: 20px;
+    color: #f4efff;
+}
+
+.container .sign-up p {
+    width: 90%;
+    line-height: 1.4rem;
+    color: #c1b6ff;
+}
+
+.container .sign-up a.button.btn-sign-up {
+    padding: 12px 40px;
+    background: transparent;
+    border: 1px solid #d5dbf3;
+    border-radius: 8px;
+    color: #d5dbf3;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+@media (max-width: 780px) {
+    .container {
+        width: 640px;
+    }
+}
+
+@media (max-width: 780px) {
+    .container {
+        width: 600px;
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        margin: 60px 0;
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+        width: 80%;
+    }
+
+    .container .sign-up {
+        border-radius: 46% 20px 20px 20px;
+    }
+
+    .container .sign-up h1 {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 90%;
+    }
+}
