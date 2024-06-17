@@ -38,6 +38,19 @@ button {
     margin-bottom: 32px;
 }
 
+.container .register header:first-child {
+    position: relative;
+}
+
+.container .register header a {
+    position: absolute;
+    color: #d5dbf3;
+    display: block;
+    left: -28px;
+    top: 8px;
+    font-size: 20px;
+}
+
 .container .register header h1 div.separator {
     width: 100px;
     height: 4px;
@@ -77,6 +90,7 @@ button {
 
 .container .register form .input.gender fieldset {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
     border: none;
@@ -105,3 +119,41 @@ button {
     border-radius: 8px;
 }
 
+@media (max-width: 800px) {
+    .container .hero {
+        display: none;
+    }
+    .container {
+        grid-template-columns: 1fr;
+    }
+    
+}
+
+@media (max-width: 400px) {
+    .container .register {
+        padding: 32px;
+        padding-top: 56px;
+    }
+    .container .register header {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: start;
+    }
+
+    .container .register header a {
+        left: 0;
+        top: -28px;
+    }
+
+    .container .register header button {
+        margin-top: 12px;
+    }
+
+    .container .register form {
+        grid-template-columns: 1fr;
+    }
+
+    .container .register form .input.gender fieldset {
+        display: block
+    }
+}

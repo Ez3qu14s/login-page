@@ -76,12 +76,16 @@ body {
     background-color: #512da9;
     border-radius: 8px;
     border: none;
-    display: block;
+    display: inline;
     color: #fff;
     padding: 12px 40px;
     cursor: pointer;
     text-transform: uppercase;
     font-weight: 500;
+}
+
+.container .sign-in a.mobile-button {
+    display: none;
 }
 
 .container .sign-up {
@@ -109,7 +113,7 @@ body {
     text-transform: uppercase;
     font-weight: 500;
 }
-
+/* 
 @media (max-width: 780px) {
     .container {
         width: 640px;
@@ -144,5 +148,35 @@ body {
 @media (max-width: 480px) {
     .container {
         width: 90%;
+    }
+} */
+
+@media (max-width: 620px) {
+    .container {
+        grid-template-columns: 1fr;
+        max-width: 80%;
+    }
+
+    .container .sign-up {
+        display: none;
+    }
+
+    .container form div {
+        display: flex;
+        gap: 12px;
+    }
+
+    .container .sign-in a.button.btn-sign-in {
+        margin-bottom: 0;
+    }
+
+    .container .sign-in a.mobile-button {
+        display: inline;
+    }
+
+    .container .sign-in a button.button.btn-sign-in {
+        background: transparent;
+        color: #180e3e;
+        border: 1px solid #180e3e;
     }
 }
